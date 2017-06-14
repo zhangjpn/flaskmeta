@@ -50,7 +50,7 @@ class User(db.Model):
     def is_anonymous(self):
         return False
 
-    def get_id(self):
+    def get_id(self):  # 被user_loader调用
         # try:
         #     return unicode(self.id)  # python 2
         # except NameError:
